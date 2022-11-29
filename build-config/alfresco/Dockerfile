@@ -33,7 +33,7 @@ USER alfresco
 #Setup simple module config
 COPY simple-module-config/alfresco.xml $TOMCAT_DIR/conf/Catalina/localhost/
 #Copy simple modules if you have any
-COPY simple-modules/*.jar $TOMCAT_DIR/modules/platform/
+#COPY simple-modules/*.jar $TOMCAT_DIR/modules/platform/
 
 #Copy updated web.xml
 COPY web.xml $TOMCAT_DIR/webapps/alfresco/WEB-INF/web.xml

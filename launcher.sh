@@ -1,4 +1,19 @@
-#!/bin/sh
+#!/bin/bash
+echo ACS_TAG=$ACS_TAG
+echo SHARE_TAG=$SHARE_TAG
+echo NGINX_TAG=$NGNIX_TAG
+echo TRANSFORMATION_CORE_TAG=$TRANSFORMATION_CORE_TAG
+echo POSTGRES_TAG=$POSTGRES_TAG
+echo ASS_TAG=$ASS_TAG
+echo AMQ_TAG=$AMQ_TAG
+
+
+if [ "$ACS_TAG" == "" ]
+then
+	echo "environmane variables not set"
+	exit -1
+fi
+
 
 export COMPOSE_FILE_PATH="${PWD}/docker-compose.yml"
 echo Docker compose file: $COMPOSE_FILE_PATH

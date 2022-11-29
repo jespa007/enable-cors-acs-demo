@@ -1,0 +1,8 @@
+# Docker Image versions
+export ACS_TAG=7.1.0-M1
+export SHARE_TAG=7.1.0-M1
+export NGNIX_TAG=3.1.1
+export TRANSFORMATION_CORE_TAG=2.5.0
+export POSTGRES_TAG=13.1
+export ASS_TAG=2.0.1.1
+export AMQ_TAG=5.16.1
